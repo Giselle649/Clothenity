@@ -8,6 +8,8 @@
 </head>
 <body>
     
+
+
 <!-- NAVBAR -->
 <nav class="flex justify-between bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-green-950">
     <!-- 1 -->
@@ -74,12 +76,602 @@
 <!-- end of NAVBAR -->
 
 
+
 <br>
 
 
-<!-- Halaman Home -->
+
+<!-- Halaman Login -->
 <section>
+<div class="flex h-screen w-full items-center justify-center bg-gray-900 bg-cover bg-no-repeat" style="background-image:url('https://i.pinimg.com/564x/45/ba/50/45ba507b2bab187e5d62e4ec24aa34f4.jpg')">
+    <div class="rounded-xl bg-gray-800 bg-opacity-50 px-16 py-10 shadow-lg backdrop-blur-md max-sm:px-8">
+      <div class="text-white">
+        <div class="mb-8 flex flex-col items-center">
+          <a href="#"
+            class=" block text-3xl px-4  ml-2 py-2 rounded text-white font-bold hover:text-black mt-4 lg:mt-0">Log In</a>
+          <span class="text-gray-300">Enter Login Details</span>
+        </div>
+        <form action="#">
+          <div class="mb-4 text-lg">
+            <input class="rounded-3xl border-none bg-red-700 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md" type="text" name="name" placeholder="id@email.com" />
+          </div>
+  
+          <div class="mb-4 text-lg">
+            <input class="rounded-3xl border-none bg-red-700 bg-opacity-50 px-6 py-2 text-center text-inherit placeholder-slate-200 shadow-lg outline-none backdrop-blur-md" type="Password" name="name" placeholder="*********" />
+          </div>
+          <div class="mt-8 flex justify-center text-lg text-black">
+            <button type="submit" class="rounded-3xl bg-black bg-opacity-50 px-10 py-2 text-white shadow-xl backdrop-blur-md transition-colors duration-300 hover:bg-red-700">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
-<!-- end of Halaman Home -->
+<!-- end of Halaman Login -->
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman List Entitas Utama -->
+<section class="container px-4 mx-auto bg-gray-100">
+
+    <div class="bg-red-800 p-4 border-t-2  border-indigo-400 rounded-t">
+        <div class="max-w-sm mx-auto md:w-full md:mx-0">
+          <div class="inline-flex items-center space-x-4">
+            <h1 class="block text-3xl rounded text-white font-bold flex items-center justify-center">Product List</h1>
+          </div>
+        </div>
+    </div>
+
+    <!-- Add Product Button -->
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex items-center mt-4 gap-x-3">
+            <button class="flex items-center justify-center w-1/2 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 rounded-lg shrink-0 sm:w-auto gap-x-2 bg-red-800">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+
+                <span>Add Product</span>
+            </button>
+        </div>
+    </div>
+    <!-- end of Add Product Button -->
+
+    <!-- Table -->
+    <div class="flex flex-col mt-6">
+        <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+
+                        <!-- Table Header -->
+                        <thead class="bg-red-800">
+                            <tr>
+                                <th scope="col" class="py-3.5 px-4 text-sm text-left rtl:text-right text-white font-bold">
+                                    <button class="flex items-center gap-x-3 focus:outline-none">
+                                        <span>Id</span>
+                                    </button>
+                                </th>
+
+                                <th scope="col" class="px-12 py-3.5 text-sm text-left rtl:text-right text-white font-bold">
+                                    Name
+                                </th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">
+                                    Description
+                                </th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Price</th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Stock</th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Image url</th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Category</th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Author</th>
+
+                                <th scope="col" class="px-4 py-3.5 text-sm text-left rtl:text-right text-white font-bold">Action</th>
+                            </tr>
+                        </thead>
+                        <!-- end of Table Header -->
+
+
+                        <tbody class="bg-white">
+                            <!-- 1st Table Data -->
+                            <tr>
+                                <td class="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                                <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                    <div>
+                                        <p class="text-black">Brings all your news into one place</p>
+                                    </div>
+                                </td>
+                                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <p class="text-black">Brings all your news into one place</p>
+                                    </div>
+                                </td>
+
+                                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <p class="text-black">Brings all your news into one place</p>
+                                    </div>
+                                </td>
+
+                                <td class="px-4 py-4 text-sm whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <p class="text-black">Brings all your news into one place</p>
+                                    </div>
+                                </td>
+                                <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                                <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                                <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div class="inline px-3 py-1 text-sm font-normal rounded-full text-white gap-x-2 bg-black">
+                                        Delete
+                                    </div>
+                                    <div class="inline px-3 py-1 text-sm font-normal rounded-full text-white gap-x-2 bg-black">
+                                        Edit
+                                    </div>
+                                    <div class="inline px-3 py-1 text-sm font-normal rounded-full text-white gap-x-2 bg-black">
+                                        Change Image url
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end of 1st Table Data -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Table -->
+</section>
+<!-- end of Halaman List Entitas Utama -->
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman Create Entitas Utama -->
+<section>
+<form class="rounded-xl bg-gray-100 px-16 py-16 shadow-2xl  max-sm:px-8">
+    <div class="bg-red-800 p-4 border-t-2  border-indigo-400 rounded-t">
+        <div class="max-w-sm mx-auto md:w-full md:mx-0">
+          <div class="inline-flex items-center space-x-4">
+            <h1 class="block text-3xl rounded text-white font-bold flex items-center justify-center">Create a Product</h1>
+          </div>
+        </div>
+    </div>
+      
+      <hr>
+      <br>
+    <br>
+
+        <div class="sm:col-span-3">
+            <label for="first-name" class="block text-lg font-bold leading-6 text-black ">Product Name</label>
+            <div class="mt-2">
+                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="sm:col-span-4">
+            <label for="price" class="block text-lg font-bold leading-6 text-black ">Price</label>
+            <div class="mt-2">
+                <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                    <span class="flex select-none items-center pl-3 text-black font-semibold sm:text-sm">RP/</span>
+                    <input type="text" name="price" id="price" autocomplete="price" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-350 focus:ring-0 sm:text-sm sm:leading-6" placeholder="350.000">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+           
+        
+          <div class="col-span-full">
+            <label for="about" class="block text-lg font-bold leading-6 text-black ">Description</label>
+            <div class="mt-2">
+              <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+            </div>
+          </div>
+  
+          <br>
+          <br>
+  
+          <div class="col-span-full">
+            <label for="cover-photo" class="block text-lg font-bold leading-6 text-black ">Image Url</label>
+            <div class="mt-2">
+                <input type="text" id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/4511b3e46afa2793c0975111f9c21f75507cc740_xxl-1.jpg"></textarea>
+              </div>
+          </div>
+      
+         <br>
+         <br>
+  
+  
+          <div class="sm:col-span-4">
+            <label for="stock" class="block text-lg font-bold leading-6 text-black ">Stock</label>
+            <div class="mt-2">
+              <input id="stock" name="stock" type="stock" autocomplete="stock" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+            </div>
+          </div>
+
+          <br>
+          <br>
+  
+          <div class="sm:col-span-3">
+            <label for="country" class="block text-lg font-bold leading-6 text-black ">Category</label>
+            <div class="mt-2">
+              <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                <option>Tops</option>
+                <option>Bottoms</option>
+                <option>Dress</option>
+                <option>Outerwears</option>
+                <option>Sportswears</option>
+              </select>
+            </div>
+          </div>
+          <br>
+          <br>
+          <hr>
+          <br>
+
+          <div class="pt-4 flex items-center space-x-4">
+            <button class="bg-black flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Create</button>
+        </div>
+
+  </form>
+</section>
+<!-- end of Halaman Create Entitas Utama -->
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman Edit Entitas Utama -->
+<section>
+    <form class="rounded-xl bg-gray-100 px-16 py-10 shadow-2xl  max-sm:px-8">
+        <div class="bg-red-800 p-4 border-t-2  border-indigo-400 rounded-t">
+            <div class="max-w-sm mx-auto md:w-full md:mx-0">
+              <div class="inline-flex items-center space-x-4">
+                <h1 class="block text-3xl rounded text-white font-bold flex items-center justify-center">Update a Product</h1>
+              </div>
+            </div>
+        </div>
+          
+          <hr>
+          <br>
+        <br>
+    
+            <div class="sm:col-span-3">
+                <label for="first-name" class="block text-lg font-bold leading-6 text-black ">Product Name</label>
+                <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+    
+            <br>
+            <br>
+    
+            <div class="sm:col-span-4">
+                <label for="price" class="block text-lg font-bold leading-6 text-black ">Price</label>
+                <div class="mt-2">
+                    <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
+                        <span class="flex select-none items-center pl-3 text-black font-semibold sm:text-sm">RP/</span>
+                        <input type="text" name="price" id="price" autocomplete="price" class="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-350 focus:ring-0 sm:text-sm sm:leading-6" placeholder="350.000">
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+               
+            
+              <div class="col-span-full">
+                <label for="about" class="block text-lg font-bold leading-6 text-black ">Description</label>
+                <div class="mt-2">
+                  <textarea id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
+                </div>
+              </div>
+      
+              <br>
+              <br>
+      
+              <div class="col-span-full">
+                <label for="cover-photo" class="block text-lg font-bold leading-6 text-black ">Image Url</label>
+                <div class="mt-2">
+                    <input type="text" id="about" name="about" rows="3" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="https://d29c1z66frfv6c.cloudfront.net/pub/media/catalog/product/large/4511b3e46afa2793c0975111f9c21f75507cc740_xxl-1.jpg"></textarea>
+                  </div>
+              </div>
+          
+             <br>
+             <br>
+      
+      
+              <div class="sm:col-span-4">
+                <label for="stock" class="block text-lg font-bold leading-6 text-black ">Stock</label>
+                <div class="mt-2">
+                  <input id="stock" name="stock" type="stock" autocomplete="stock" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+              </div>
+    
+              <br>
+              <br>
+      
+              <div class="sm:col-span-3">
+                <label for="country" class="block text-lg font-bold leading-6 text-black ">Category</label>
+                <div class="mt-2">
+                  <select id="country" name="country" autocomplete="country-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                    <option>Tops</option>
+                    <option>Bottoms</option>
+                    <option>Dress</option>
+                    <option>Outerwears</option>
+                    <option>Sportswears</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <br>
+              <hr>
+              <br>
+    
+              <div class="pt-4 flex items-center space-x-4">
+                <button class="bg-black flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Update</button>
+            </div>
+      </form>
+</section>
+<!-- end of Halaman Edit Entitas Utama -->
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman Upload Image Entitas Utama -->
+<section class="rounded-xl bg-gray-100 px-16 py-10 shadow-2xl  max-sm:px-8">
+    <div class="bg-red-800 p-4 border-t-2  border-indigo-400 rounded-t">
+        <div class="max-w-sm mx-auto md:w-full md:mx-0">
+          <div class="inline-flex items-center space-x-4">
+            <h1 class="block text-3xl rounded text-white font-bold flex items-center justify-center">Update Product Image</h1>
+          </div>
+        </div>
+    </div>
+    <div class="col-span-full">
+        <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Photo</label>
+        <div class="mt-2 flex items-center gap-x-3">
+          <svg class="h-13 w-10 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+          </svg>
+          <button type="button" class="rounded-md bg-white px-2.5 py-1.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Change</button>
+        </div>
+      </div>
+
+      <div class="col-span-full">
+        <label for="cover-photo" class="block text-sm font-medium leading-6 text-gray-900">Cover photo</label>
+        <div class="mt-2 flex justify-center rounded-lg border border-dashed border-gray-900/25 px-6 py-10">
+          <div class="text-center">
+            <svg class="mx-auto h-12 w-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 012.25-2.25h16.5A2.25 2.25 0 0122.5 6v12a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 18V6zM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0021 18v-1.94l-2.69-2.689a1.5 1.5 0 00-2.12 0l-.88.879.97.97a.75.75 0 11-1.06 1.06l-5.16-5.159a1.5 1.5 0 00-2.12 0L3 16.061zm10.125-7.81a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0z" clip-rule="evenodd" />
+            </svg>
+            <div class="mt-4 flex text-sm leading-6 text-gray-600">
+              <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 hover:text-indigo-500">
+                <span>Upload a file</span>
+                <input id="file-upload" name="file-upload" type="file" class="sr-only">
+              </label>
+              <p class="pl-1">or drag and drop</p>
+            </div>
+            <p class="text-xs leading-5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end of Halaman Upload Image Entitas Utama -->
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman List Entitas Kedua -->
+<section class="container px-4 mx-auto bg-gray-100">
+
+    <div class="bg-red-800 p-4 border-t-2  border-indigo-400 rounded-t">
+        <div class="max-w-sm mx-auto md:w-full md:mx-0">
+          <div class="inline-flex items-center space-x-4">
+            <h1 class="block text-3xl rounded text-white font-bold flex items-center justify-center">Categories List</h1>
+          </div>
+        </div>
+    </div>
+    <!-- Table -->
+    <div class="flex flex-col mt-6">
+        <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
+                    <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+
+                        <!-- Table Header -->
+                        <thead class="bg-red-800">
+                            <tr>
+                                <th scope="col" class="py-3.5 px-4 text-sm text-left rtl:text-right text-white font-bold">
+                                    <button class="flex items-center gap-x-3 focus:outline-none">
+                                        <span>Id</span>
+                                    </button>
+                                </th>
+
+                                <th scope="col" class="px-12 py-3.5 text-sm text-left rtl:text-right text-white font-bold">
+                                    Name
+                                </th>
+                        </thead>
+                        <!-- end of Table Header -->
+
+
+                        <tbody class="bg-white">
+                            <!-- 1st Table Data -->
+                            <tr>
+                                <td class="px-4 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                                <td class="px-12 py-4 text-sm font-medium whitespace-nowrap">
+                                    <div>
+                                        <p class="text-sm font-normal text-black">catalogapp.io</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end of 1st Table Data -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of Table -->
+</section>
+<!-- end of Halaman List Entitas Kedua -->
+
+
+
+<br>
+<br>
+<hr>
+<br>
+<br>
+
+
+
+<!-- Halaman Add User -->
+<section class="container px-4 mx-auto bg-gray-100">
+<!-- component -->
+<div class="h-screen md:flex">
+	<div class="lg:flex w-1/2 hidden bg-gray-500 bg-no-repeat bg-cover relative items-center" style="background-image: url(https://i.pinimg.com/564x/23/01/70/230170b1b6dfa3721ebc5abcfe9b7b89.jpg);">
+        <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="w-full px-24 z-10">
+            <h1 class="text-5xl text-red-700 font-bold text-left tracking-wide">C L O T H E N I T Y</h1>
+            <p class="text-3xl my-4 text-white">A classic that is loved by all.</p>
+        </div>
+    </div>
+	<div class="flex md:w-1/2 justify-center py-10 items-center bg-white">
+		<!-- component -->
+<div class="bg-grey-lighter min-h-screen flex flex-col">
+    <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
+        <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
+            <h1 class="mb-8 text-3xl text-center font-bold">Register Staff</h1>
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="fullname"
+                placeholder="Username" />
+
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="email"
+                placeholder="Email" />
+
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="password"
+                placeholder="Password" />
+            <input 
+                type="password"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="confirm_password"
+                placeholder="Confirm Password" />
+
+
+            <input 
+                type="text"
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="phoneNumber"
+                placeholder="Phone Number" />
+
+            <textarea 
+                class="block border border-grey-light w-full p-3 rounded mb-4"
+                name="address"
+                placeholder="Address"></textarea>
+
+
+            <button
+                type="submit"
+                class="w-full text-center py-3 rounded bg-black text-white hover:bg-green-dark focus:outline-none my-1"
+            >Create Account</button>
+
+            <div class="text-center text-sm text-grey-dark mt-4">
+                By signing up, you agree to the 
+                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    Terms of Service
+                </a> and 
+                <a class="no-underline border-b border-grey-dark text-grey-dark" href="#">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+
+        <div class="text-grey-dark mt-6">
+            Already have an account? 
+            <a class="no-underline border-b border-blue text-blue" href="../login/">
+                Log in
+            </a>.
+        </div>
+    </div>
+</div>
+	</div>
+</div>
+</section>
+<!-- end of Halaman Add User -->
+
+
 </body>
 </html>

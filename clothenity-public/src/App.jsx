@@ -1,8 +1,14 @@
-
+//Import function yang dibutuhkan untuk mengakses data reaktif (state) pada React
+import { useState } from "react";
 
 function App() {
+  // Di sini kita akan menggunakan "data" yang bisa digunakan secara "reaktif"
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
+  
   return (
     <>     
+
       {/* NAVBAR */}
       <nav className="flex justify-between bg-white py-4 lg:px-12 shadow border-solid border-t-2 border-green-950">
           {/* 1 */}
@@ -51,14 +57,16 @@ function App() {
                   {/* Log In Button (FOR ADMIN) Component */}
                   <a href="#"
                   className=" block text-md px-4  ml-2 py-2 rounded text-red-700 font-bold hover:text-black mt-4 lg:mt-0">Log In</a>
-                  {/* Log In Button Component */}
+                  {/* Log In Button (FOR ADMIN) Component */}
               </div>
           </div>
           {/* end of 3 */}
       </nav>
       {/* end of NAVBAR */}
 
+
       <br />
+
 
       {/* Halaman Home */}
       <section>
@@ -315,6 +323,7 @@ function App() {
           {/* end of 1st Product */}
       </section>
       {/* end of Halaman Detail */}
+
     </>
   )
 }

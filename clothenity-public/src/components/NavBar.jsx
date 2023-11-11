@@ -49,10 +49,6 @@ const NavBar = () => {
                   className=" block text-md px-4  ml-2 py-2 rounded text-red-700 font-bold hover:text-black mt-4 lg:mt-0">Home</Link>
                   {/* end of Home Button Component */}
 
-                  {/* Log In Button (FOR ADMIN) Component */}
-                  <a href="#"
-                  className=" block text-md px-4  ml-2 py-2 rounded text-red-700 font-bold hover:text-black mt-4 lg:mt-0">Log In</a>
-                  {/* Log In Button (FOR ADMIN) Component */}
               </div>
           </div>
           {/* end of 3 */}

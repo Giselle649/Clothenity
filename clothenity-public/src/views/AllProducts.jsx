@@ -3,7 +3,10 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 
+
+
 const AllProducts = (props) => {
+  
     const navigate = useNavigate()
     const [allProducts, setAllProducts] = useState([])
     const [loading, setLoading] = useState(false)

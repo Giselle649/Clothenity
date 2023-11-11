@@ -45,7 +45,7 @@ const NavBar = () => {
         
   
         {/* Log Out Button Component */}
-        <Link to="/products" className="text-md px-4 ml-2 py-2 rounded text-red-700 font-bold hover:text-black mt-4 lg:mt-0">Log Out</Link>
+        <Link to="/login" className="text-md px-4 ml-2 py-2 rounded text-red-700 font-bold hover:text-black mt-4 lg:mt-0">Log Out</Link>
         {/* end of Log Out Button Component */}
     </div>
     {/* end of 3 */}

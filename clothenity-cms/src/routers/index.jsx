@@ -7,6 +7,11 @@ import ProductsListTable from "../views/ProductsListTable";
 import Parent from "../views/Parent";
 import AddProductForm from "../views/AddProductForm";
 import EditProductForm from "../views/EditProductForm";
+import CategoriesListTable from "../views/CategoriesListTable";
+import Register from "../views/RegisterStaffForm";
+import ChangeProductImageForm from "../views/ChangeProductImageForm";
+
+
 
   
   const router = createBrowserRouter([
@@ -50,14 +55,14 @@ import EditProductForm from "../views/EditProductForm";
                   path: "/changeproductimage/:id",
                   element: <ChangeProductImageForm />,      
               },
-          //     {
-          //       path: "/categories",
-          //       element: <CategoriesListTable />,      
-          //   },
-          //   {
-          //       path: "/registerstaff",
-          //       element: <RegisterStaffForm />,      
-          //  },
+              {
+                path: "/categories",
+                element: <CategoriesListTable />,      
+            },
+            {
+                path: "/registerstaff",
+                element: <Register />,      
+           },
           ]
       }
   ]);
